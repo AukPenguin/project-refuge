@@ -58,10 +58,12 @@ main {
 }
 
 .animal-card {
+    position: relative;
+
     box-sizing: border-box;
     width: 100%;
     max-width: 200px;
-    
+
     justify-self: center;
     aspect-ratio: 1/1.4;
 
@@ -70,6 +72,115 @@ main {
     background: #f0f5ff;
 }
 
-@media (min-width: 500px) {
+.animal-card button {
+    position: absolute;
+    z-index: 1;
 
+    bottom: 8px;
+    left: 50%;
+    width: 70%;
+    min-height: 38px;
+    transform: translateX(-50%);
+
+    border: 0;
+    border-radius: 11px;
+    background: #24877f;
+    color: #fff;
+    cursor: pointer;
+
+    font: inherit;
+    font-weight: 600;
+}
+
+.animal-card button:hover {
+    background: #1d716b;
+}
+
+.animal-card button:focus-visible {
+    outline: 3px solid #fff;
+    outline-offset: 3px;
+    box-shadow: 0 0 0 6px #173a55;
+}
+
+.content-band {
+    margin: 32px -20px;
+    background: #fbf8f1;
+}
+
+.content-band-inner {
+    box-sizing: border-box;
+    max-width: 1000px;
+
+    margin: 0 auto;
+    padding: 28px clamp(16px, 8%, 80px);
+
+    background: #fbf8f1;
+    font-family: Arial, sans-serif;
+}
+
+.content-band-inner h2 {
+    margin: 0 0 16px;
+
+    font-size: 18px;
+    text-align: center;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    gap: 14px;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.card {
+    box-sizing: border-box;
+    display: flex;
+
+    width: 100%;
+    max-width: 220px;
+    min-height: 88px;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+
+    padding: 12px 8px;
+
+    border: 1px solid #bdd8ff;
+    border-radius: 10px;
+    background: #f0f5ff;
+    color: #3867b5;
+
+    text-align: center;
+}
+
+.card h3 {
+    margin: 0;
+    font-size: 12px;
+}
+
+.card p {
+    margin: 0;
+    font-size: 10px;
+    line-height: 1.4;
+}
+
+@media (min-width: 700px) {
+    .content-band-inner h2 {
+        text-align: left;
+    }
+
+    .card-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .card-grid > .card {
+        min-height: 104px;
+    }
 }
