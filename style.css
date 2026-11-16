@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+}
+
+main {
+    margin: 0 20px;
+}
+
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    gap: 12px;
+    padding: 12px 26px;
+
+    background: #deefeb;
+    border-bottom: 2px solid #bdd8ff;
+    border-radius: 0 0 28px 28px;
+}
+
+.header a {
+    color: black;
+    text-decoration: none;
+}
+
+.Logo-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo {
+    max-width: 40px;
+    max-height: 40px;
+}
+
+.nav-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+
+    gap: 12px 20px;
+}
+
+.featured-random {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 160px), 1fr));
+
+    gap: 16px;
+    width: 100%;
+    max-width: 848px;
+
+    margin: 32px auto;
+}
+
+.animal-card {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 200px;
+    
+    justify-self: center;
+    aspect-ratio: 1/1.4;
+
+    border: 2px solid #d5e4ff;
+    border-radius: 12px;
+    background: #f0f5ff;
+}
+
+@media (min-width: 500px) {
+
+}
