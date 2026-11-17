@@ -28,11 +28,11 @@ main {
 }
 
 
-.header {
+header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 
     gap: 12px;
     padding: 12px 26px;
@@ -42,7 +42,25 @@ main {
     border-radius: 0 0 28px 28px;
 }
 
-.header a {
+header a {
+    color: black;
+    text-decoration: none;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: nowrap;
+
+    gap: clamp(4px, 4vw, 52px);
+    padding: 20px 32px;
+
+    background-color: var(--color-primary);
+}
+
+footer a {
     color: black;
     text-decoration: none;
 }
@@ -192,6 +210,9 @@ main {
     color: var(--color-accent);
     font-weight: 600;
 }
+
+
+
 
 @media (min-width: 700px) {
     .content-band-wrapper h2 {
