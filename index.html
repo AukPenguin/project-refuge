@@ -2,7 +2,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Refuges&amp;compagnons</title>
+        <title>Refuges&amp;Compagnons</title>
         <link rel="stylesheet" href="style.css">
     </head>
 
@@ -14,7 +14,7 @@
                 <img class="logo" src="assets/logo-refuge.png" alt="Logo Refuges&Compagnons">
                 <span>Refuges&amp;Compagnons</span>
             </a>
-            <nav class="nav-menu" aria-label="main-navigation">
+            <nav class="nav-menu" aria-label="Navigation principale">
                 <a href="">Catégories</a>
                 <a href="">Refuges</a>
                 <a href="">A propos</a>
@@ -23,29 +23,58 @@
         
         <main>
 
-            <section>
-                <h2>Chaque refuge. Chaque animal. Une seule recherche.</h2>
+            <section class="section-wrapper hero" aria-label="Chaque refuge. Chaque animal. Une seule recherche.">
+                <h1>Chaque refuge.<br>Chaque animal.<br>Une seule recherche.</h1>
                 <p>Nous rassemblons des animaux adoptables provenant de refuges locaux, afin que vous n'ayez pas à consulter dix sites web différents.</p>
             </section>
 
-            <section class="featured-random">
-                <div class="animal-card">
+            <section class="featured-animals" aria-label="Animaux à adopter">
+
+                <article class="animal-card">
+                    <div class="animal-card-media" aria-label="Photo de l'animal">Image placeholder</div>
+                    <div class="animal-card-info">
+                        <h3>Nom placeholder</h3>
+                        <p>Refuge : Refuge placeholder</p>
+                        <p class="animal-details">Details supplementaire placeholder</p>
+                    </div>
                     <button>Plus d'infos</button>
-                </div>
-                <div class="animal-card">
+                </article>
+
+                <article class="animal-card">
+                    <div class="animal-card-media" aria-label="Photo de l'animal">Image placeholder</div>
+                    <div class="animal-card-info">
+                        <h3>Nom placeholder</h3>
+                        <p>Refuge : Refuge placeholder</p>
+                        <p class="animal-details">Details supplementaire placeholder</p>
+                    </div>
                     <button>Plus d'infos</button>
-                </div>
-                <div class="animal-card">
+                </article>
+                
+                <article class="animal-card">
+                    <div class="animal-card-media" aria-label="Photo de l'animal">Image placeholder</div>
+                    <div class="animal-card-info">
+                        <h3>Nom placeholder</h3>
+                        <p>Refuge : Refuge placeholder</p>
+                        <p class="animal-details">Details supplementaire placeholder</p>
+                    </div>
                     <button>Plus d'infos</button>
-                </div>
-                <div class="animal-card">
+                </article>
+
+                <article class="animal-card">
+                    <div class="animal-card-media" aria-label="Photo de l'animal">Image placeholder</div>
+                    <div class="animal-card-info">
+                        <h3>Nom placeholder</h3>
+                        <p>Refuge : Refuge placeholder</p>
+                        <p class="animal-details">Details supplementaire placeholder</p>
+                    </div>
                     <button>Plus d'infos</button>
-                </div>
+                </article>
+                
             </section>
 
-            <section class="feature-section" aria-labelledby="explenation-title">
-                <div class="feature-section-wrapper">
-                    <h2 id="explenation-title">Comment ça marche ?</h2>
+            <section class="feature-section" aria-label="Comment ça marche?">
+                <div class="section-wrapper">
+                    <h2>Comment ça marche ?</h2>
                     <ol class="card-grid">
                         <li class="card">
                             <h3>1. Recherchez</h3>
@@ -63,9 +92,9 @@
                 </div>
             </section>
 
-            <section class="feature-section" aria-labelledby="partners-title">
-                <div class="feature-section-wrapper">
-                    <h2 id="partners-title">Nos refuges partenaires</h2>
+            <section class="feature-section" aria-label="Nos refuges partenaires">
+                <div class="section-wrapper">
+                    <h2>Nos refuges partenaires</h2>
                     <ul class="card-grid">
                         <li class="card card-compact card-accent">Green Valley SPCA</li>
                         <li class="card card-compact card-accent">City Animal Rescue</li>
