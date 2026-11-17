@@ -1,5 +1,26 @@
+:root {
+    --page-body: #ffffff;
+
+    --color-primary: #f0f5ff;
+    --color-secondary: ;
+    --color-tertiary: ;
+    --color-accent:  #7040d8;
+
+    --button-color: #24877f;
+    --button-text: #ffffff;
+    --button-focus: #1d716b;
+
+    --card-color: #f0f5ff;
+    --card-border: #bdd8ff;
+    --card-text: #3867b5;
+    --card-accent-color: #f4f1ff;
+    --card-accent-border: #e2d9ff;
+}
+
 body {
     margin: 0;
+
+    background-color: var(--page-body);
 }
 
 main {
@@ -16,8 +37,8 @@ main {
     gap: 12px;
     padding: 12px 26px;
 
-    background: #deefeb;
-    border-bottom: 2px solid #bdd8ff;
+    background-color: var(--color-primary);
+    border-bottom: 2px solid var(--card-border);
     border-radius: 0 0 28px 28px;
 }
 
@@ -67,9 +88,9 @@ main {
     justify-self: center;
     aspect-ratio: 1/1.4;
 
-    border: 2px solid #d5e4ff;
+    border: 2px solid var(--card-border);
     border-radius: 12px;
-    background: #f0f5ff;
+    background-color: var(--card-color);
 }
 
 .animal-card button {
@@ -84,36 +105,27 @@ main {
 
     border: 0;
     border-radius: 11px;
-    background: #24877f;
-    color: #fff;
+    background-color: var(--button-color);
+    color: var(--button-text);
     cursor: pointer;
 
     font-weight: 600;
 }
 
 .animal-card button:hover {
-    background: #1d716b;
+    background-color: var(--button-focus);
 }
 
-.animal-card button:focus-visible {
-    outline: 3px solid #fff;
-    outline-offset: 3px;
-    box-shadow: 0 0 0 6px #173a55;
-}
-
-.content-band {
+.feature-section {
     margin: 32px -20px;
-    background: #fbf8f1;
 }
 
-.content-band-wrapper {
+.feature-section-wrapper {
     box-sizing: border-box;
     max-width: 1000px;
 
     margin: 0 auto;
     padding: 28px clamp(16px, 8%, 80px);
-
-    background: #fbf8f1;
 }
 
 .content-band-wrapper h2 {
@@ -150,10 +162,10 @@ main {
 
     padding: 12px 8px;
 
-    border: 1px solid #bdd8ff;
+    border: 2px solid var(--card-border);
     border-radius: 10px;
-    background-color: #f0f5ff;
-    color: #3867b5;
+    background-color: var(--card-color);
+    color: var(--card-text);
 
     text-align: center;
 }
@@ -175,9 +187,9 @@ main {
 }
 
 .card-accent {
-    border: 2px solid #e2d9ff;
-    background-color: #f4f1ff;
-    color: #7040d8;
+    border: 2px solid var(--card-accent-border);
+    background-color: var(--card-accent-color);
+    color: var(--color-accent);
     font-weight: 600;
 }
 
